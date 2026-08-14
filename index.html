@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="High-Flux Count-Free Single-Photon 3D Cameras - AUTHOR_NAMES">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -23,7 +23,7 @@
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="High-Flux Count-Free Single-Photon 3D Cameras">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Replace with your actual website URL -->
@@ -32,7 +32,7 @@
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:image:alt" content="High-Flux Count-Free Single-Photon 3D Cameras - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
   <meta property="article:author" content="FIRST_AUTHOR_NAME">
   <meta property="article:section" content="Research">
@@ -46,15 +46,15 @@
   <!-- TODO: Replace with first author's Twitter handle -->
   <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
+  <meta name="twitter:title" content="High-Flux Count-Free Single-Photon 3D Cameras">
   <!-- TODO: Same as description above -->
   <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:image:alt" content="High-Flux Count-Free Single-Photon 3D Cameras - Research Preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_title" content="High-Flux Count-Free Single-Photon 3D Cameras">
   <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
   <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
   <meta name="citation_publication_date" content="2024">
@@ -75,7 +75,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>High-Flux Count-Free Single-Photon 3D Cameras - AUTHOR_NAMES | Academic Research</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -130,11 +130,8 @@
     }
     /* Figure wrappers to ensure diagrams are visible on dark background */
     .dark-mode-figure {
-      background: #ffffff;
-      padding: 12px;
-      border-radius: 8px;
-      display: inline-block;
-      margin-bottom: 1rem;
+      background: transparent !important;
+      padding: 0 !important;
     }
     .abstract-text {
       color: #ffffff !important;
@@ -182,7 +179,7 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
+    "headline": "High-Flux Count-Free Single-Photon 3D Cameras",
     "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
     "author": [
       {
@@ -305,7 +302,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/kaustubh-sadekar/High-Flux-Count-Free-Single-Photon-3D-Cameras" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -367,19 +364,19 @@ Our work will enable high-resolution SPAD cameras that are severely bandwidth-co
           <img src="static/images/Intro_SPCs.png" alt="First research result visualization" loading="lazy"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          <b>Active SPC Imaging Model</b> Caption to be added
+          <b>SPCs use time-of-flight principle to estimate the scene distance </b> by measuring the round-trip time of the laser pulse to and from the scene. They capture the photon time stamps of the returning photons and the peak of time stamp distribution gives us the time of flight and thus the scene distance.
         </h2>
       </div>
 
-      <h2 class="title is-3 has-text-centered mb-6">Current limitations of conventional SPCs</h2>
-
+      <h2 class="title is-3 has-text-centered mb-6">Current limitations of conventional SPCs: 
+        Massive raw data rates and dead-time distortion in high-photon-flux conditions</h2>
       <!-- Frame 2 -->
       <div class="static-frame has-text-centered">
         <div class="dark-mode-figure">
           <img src="static/images/Conventional_SPC_limitation1.png" alt="Second research result visualization" loading="lazy"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          <b>Limitation 1: extreme datarate.</b> Caption to be added
+          <b>Limitation 1: extreme data rate requirement.</b> The Conventional SPCs capture equi-width histograms of the photon timestamp data. They require 500 to 1000 histogram bins per pixel for practical accuracy and distance range. In case of limited resources per pixels, reducing the histogram bins leads to heavy quantization. So, conventional SPCs suffer a strict tradeoff between the resource requirements and the measurement accuracy.
         </h2>
       </div>
 
@@ -389,7 +386,7 @@ Our work will enable high-resolution SPAD cameras that are severely bandwidth-co
           <img src="static/images/Conventional_SPC_limitation2.png" alt="Third research result visualization" loading="lazy"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          <b>Limitation 2: dead-time distortion.</b> Caption to be added
+          <b>Limitation 2: dead-time distortion in high-flux scenarios.</b> Due to an intrinsic property of SPADs called the dead-time, Operating SPCs in high-flux condition such as bright sunlight causes a mismatch between the distribution of photons arriving at the SPCs shown here in white color and the distribution of photons detected by the SPC. Operating in case of higher background flux (right) renders a lot of pixels useless because the peak of photon detections is no longer close to the actual peak that we want to estimate.
         </h2>
       </div>
 
@@ -401,7 +398,7 @@ Our work will enable high-resolution SPAD cameras that are severely bandwidth-co
           <img src="static/images/Stacking_Existing_ConventionalSPC_Solutions.png" alt="Fourth research result visualization" loading="lazy"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          <b>Existing methods only address one of the two limitations.</b> Caption to be added
+          <b>Existing methods only address one of the two limitations.</b> To enable accurate and high-resolution SPCs as mainstream 3D sensors we need to jointly address the data rate problem and compensate for the dead-time distortion. If we combine existing techniques in a naive two step approach where we captured compressed measurements with just a few histogram bins and then apply existing compensation techniques we fail to recover accurate depth due to heavy quantization.
         </h2>
       </div>
 
@@ -410,33 +407,13 @@ Our work will enable high-resolution SPAD cameras that are severely bandwidth-co
       <!-- Frame 6 -->
       <div class="static-frame has-text-centered">
         <div class="dark-mode-figure">
-          <img src="static/images/FullScene_Results_With_Transients.png" alt="Sixth research result visualization" loading="lazy"/>
+          <img src="static/images/Full_Scene_Results.png" alt="Sixth research result visualization" loading="lazy"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          <b>Full scene results with non ideal transients</b> Caption to be added 
+          <b>Our hardware-algorithm codesign can recover accurate scene distances from highly distorted, low-memory EDH measurements.</b> On the hardware side we capture a more efficient representation of photon timestamp data and on the algorithm side we propose a robust reconstruction pipeline to estimate accurate scene distance from the dead-time distorted equi-depth histogram measurements. Notice how our method significantly outperforms the naive two step approach used by conventional SPCs.
         </h2>
       </div>
 
-
-      <!-- Frame 6 -->
-      <div class="static-frame has-text-centered">
-        <div class="dark-mode-figure">
-          <img src="static/images/FIG_HardwareResults.png" alt="Sixth research result visualization" loading="lazy"/>
-        </div>
-        <h2 class="subtitle has-text-centered">
-          <b>AbS robustness to non-ideal transients in real hardware data.</b> Our AbS pipeline can handle non-ideal transients such as single-pixel transients...
-        </h2>
-      </div>
-
-      <!-- Frame 7 -->
-      <div class="static-frame has-text-centered">
-        <div class="dark-mode-figure">
-          <img src="static/images/robustness_to_calibration_errors.png" alt="Seventh research result visualization" loading="lazy"/>
-        </div>
-        <h2 class="subtitle has-text-centered">
-          <b>Robustness of our AbS pipeline to calibration errors and model mismatch.</b> The AbS pipeline estimates the scene distance and signal flux...
-        </h2>
-      </div>
 
     </div>
   </div>
