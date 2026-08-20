@@ -153,6 +153,17 @@
       margin-bottom: 0;
       padding-bottom: 0;
     }
+    pre {
+      background-color: #18181b !important;
+      color: #e4e4e7 !important;
+      border: 1px solid #3f3f46 !important;
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    pre code {
+      color: #e4e4e7 !important;
+      background-color: transparent !important;
+    }
   </style>
   
   <!-- Non-critical CSS - Load asynchronously -->
@@ -173,56 +184,72 @@
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+    
+   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     "headline": "High-Flux Count-Free Single-Photon 3D Cameras",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "description": "A computational-imaging method combining free-running capture with an analysis-by-synthesis pipeline to mitigate pile-up distortions in high-flux single-photon 3D cameras.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Kaustubh Sadekar",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Portland State University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Vivek K Goyal",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Boston University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "David Maier",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Portland State University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Atul Ingle",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Portland State University"
         }
       }
     ], 
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "IEEE TPAMI / ICCP 2026"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://arxiv.org/abs/2608.18306",
+    "image": "https://kaustubh-sadekar.github.io/High-Flux-Count-Free-Single-Photon-3D-Cameras/static/images/social_preview.png",
+    "keywords": ["SPAD", "single-photon camera", "3D sensing", "depth imaging", "pile-up distortion", "computational imaging", "computer vision"],
+    "abstract": "Single-photon cameras based on single-photon avalanche diode (SPAD) technology are gaining popularity for 3D sensing, thanks to their extreme sensitivity and time resolution. There are two key challenges with single-photon cameras that limit their widespread use: (i) they suffer from non-linear distortions called pile-up when operated in high-photon-flux conditions, and (ii) they generate a large volume of raw photon data, creating a severe data bottleneck at each sensor pixel. In this work, we show that while compressive capture techniques successfully mitigate data transfer challenges, they exacerbate the effects of dead-time distortion because they fail to retain sufficient information about the photon detection history to allow post-processing pile-up correction via existing methods. We propose a new computational-imaging method that combines free-running capture with an analysis-by-synthesis software pipeline to mitigate pile-up distortions. Our results with hardware emulations and full-scene and single-pixel simulations show that our method can reliably capture scene distance and reflectance over a wide range of illumination conditions.",
+    "citation": "@misc{sadekar2026highfluxcountfreesinglephoton3d, title={High-Flux Count-Free Single-Photon 3D Cameras}, author={Kaustubh Sadekar and Vivek K Goyal and David Maier and Atul Ingle}, year={2026}, eprint={2608.18306}, archivePrefix={arXiv}, primaryClass={cs.CV}, url={https://arxiv.org/abs/2608.18306}}",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://kaustubh-sadekar.github.io/High-Flux-Count-Free-Single-Photon-3D-Cameras/"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Single-Photon 3D Imaging"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Computational Photography"
       }
     ]
   }
@@ -233,12 +260,11 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "name": "Portland State University",
+    "url": "https://www.pdx.edu",
+    "logo": "https://kaustubh-sadekar.github.io/High-Flux-Count-Free-Single-Photon-3D-Cameras/static/images/favicon.ico",
     "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "https://github.com/kaustubh-sadekar"
     ]
   }
   </script>
@@ -409,7 +435,21 @@ Our work will enable high-resolution SPAD cameras that are severely bandwidth-co
 </section>
 <!-- End Static Image Section -->
 
-
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Citation</h2>
+    <pre><code>@misc{sadekar2026highfluxcountfreesinglephoton3d,
+      title={High-Flux Count-Free Single-Photon 3D Cameras}, 
+      author={Kaustubh Sadekar and Vivek K Goyal and David Maier and Atul Ingle},
+      year={2026},
+      eprint={2608.18306},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2608.18306}, 
+}</code></pre>
+  </div>
+</section>
+    
 <!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
